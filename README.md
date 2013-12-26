@@ -1,4 +1,4 @@
-TransliteratorHelper for Yii 2
+TransliteratorHelper for Yii 1
 ==============================
 
 TransliteratorHelper transliterates UTF-8 encoded text to US-ASCII
@@ -10,12 +10,12 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require 2amigos/transliteration-helper "2.0.*"
+php composer.phar require 2amigos/transliteration-helper "1.0.*"
 ```
 or add
 
 ```json
-"2amigos/transliteration-helper": "2.0.*"
+"2amigos/transliteration-helper": "1.0.*"
 ```
 
 to the require section of your application's `composer.json` file.

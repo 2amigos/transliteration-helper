@@ -8,8 +8,6 @@
 
 namespace dosamigos\helpers;
 
-use Yii;
-
 /**
  * BaseTransliteratorHelper provides concrete implementation for [[TransliteratorHelper]].
  *
@@ -20,8 +18,7 @@ use Yii;
 class BaseTransliteratorHelper
 {
 	/**
-	 * Transliterates UTF-8 encoded text to US-ASCII. If 'intl' extension is loaded it will use it to transliterate the
-	 * string, otherwise, it will fallback on Unicode character code replacement.
+	 * Transliterates UTF-8 encoded text to US-ASCII.
 	 *
 	 * @param string $string the UTF-8 encoded string.
 	 * @param string $unknown replacement string for characters that do not have a suitable ASCII equivalent
@@ -31,11 +28,6 @@ class BaseTransliteratorHelper
 	 */
 	public static function process($string, $unknown = '?', $language = null)
 	{
-		// If intl extension load
-		if (extension_loaded('intl') === true) {
-			$options = 'Any-Latin; Latin-ASCII; NFD; [:Nonspacing Mark:] Remove; NFC;';
-			return transliterator_transliterate($options, $string);
-		}
 		if (!preg_match('/[\x80-\xff]/', $string)) {
 			return $string;
 		}
@@ -111,7 +103,7 @@ class BaseTransliteratorHelper
 							(ord($sequence[2]) - 128) * 262144 + (ord($sequence[3]) - 128) * 4096 +
 							(ord($sequence[4]) - 128) * 64 + (ord($sequence[5]) - 128);
 					}
-					$result[] = static::replace($ord, $unknown, $language);
+					$result[] = self::replace($ord, $unknown, $language);
 					$head = '';
 				} elseif ($c < "\x80") {
 					$result[] = $c;
@@ -141,7 +133,7 @@ class BaseTransliteratorHelper
 		static $map = array();
 
 		if (!isset($language)) {
-			$language = Yii::$app->language;
+			$language = \Yii::app()->language;
 			if (strpos($language, '-')) {
 				$language = substr($language, 0, strpos($language, '-'));
 			}

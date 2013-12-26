@@ -17,7 +17,6 @@ namespace dosamigos\helpers;
  * @see http://drupal.org/project/issues/transliteration
  *
  * @author Antonio Ramirez <amigo.cobos@gmail.com>
- * @since 2.0
  */
 class TransliteratorHelper extends BaseTransliteratorHelper
 {

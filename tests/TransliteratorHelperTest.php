@@ -1,15 +1,11 @@
 <?php
 
-namespace tests\unit\helpers;
-
-use Yii;
 use dosamigos\helpers\TransliteratorHelper;
-use yiiunit\TestCase;
 
 /**
  * @group helpers
  */
-class TransliteratorHelperTest extends TestCase
+class TransliteratorHelperTest extends CTestCase
 {
 
 	public function testProcess()
