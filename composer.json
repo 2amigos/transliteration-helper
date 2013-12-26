@@ -1,6 +1,6 @@
 {
     "name": "2amigos/transliterator-helper",
-    "description": "Transliterator Helper library for Yii2.",
+    "description": "Transliterator Helper for Yii2.",
     "keywords": ["helper", "yii"],
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
