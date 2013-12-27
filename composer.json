@@ -2,7 +2,8 @@
     "name": "2amigos/transliterator-helper",
     "description": "Transliterator Helper for Yii1.",
     "keywords": ["helper", "yii"],
-    "type": "yii2-extension",
+    "version": "0.0.1",
+    "type": "yii-extension",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -10,9 +11,5 @@
             "email": "ramirez.cobos@gmail.com",
             "homepage": "http://2amigos.us"
         }
-    ],
-    "require": {
-        "yiisoft/yii": "1.1.14"
-    },
-    "minimum-stability": "dev"
+    ]
 }
