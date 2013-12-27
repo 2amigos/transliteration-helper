@@ -11,5 +11,8 @@
             "email": "ramirez.cobos@gmail.com",
             "homepage": "http://2amigos.us"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-0": { "dosamigos\\helpers\\": "" }
+    }
 }
