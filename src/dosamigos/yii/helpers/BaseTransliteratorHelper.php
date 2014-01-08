@@ -5,7 +5,7 @@
  * @license http://www.opensource.org/licenses/bsd-license.php New BSD License
  */
 
-namespace dosamigos\helpers;
+namespace dosamigos\yii\helpers;
 
 /**
  * BaseTransliteratorHelper provides concrete implementation for [[TransliteratorHelper]].

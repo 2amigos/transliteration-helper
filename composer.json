@@ -1,6 +1,6 @@
 {
     "name": "2amigos/transliterator-helper",
-    "description": "Transliterator Helper for Yii1.",
+    "description": "Transliterator Helper for Yii 1.*.",
     "keywords": ["helper", "yii"],
     "version": "0.0.1",
     "type": "yii-extension",
