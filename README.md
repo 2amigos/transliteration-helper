@@ -7,7 +7,7 @@ Installation
 ------------
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
 
-> If you are looking for Yii 2.* version please check [its own repository](https://github.com/2amigos/yii2-transliteration-helper)
+> If you are looking for Yii 2.* version please check [its own repository](https://github.com/2amigos/yii2-transliterator-helper)
 
 Either run
 
